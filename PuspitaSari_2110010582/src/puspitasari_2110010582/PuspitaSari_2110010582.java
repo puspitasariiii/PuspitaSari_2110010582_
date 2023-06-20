@@ -4,6 +4,7 @@
  */
 package puspitasari_2110010582;
 import perumahan.*;
+import forms.FormUtama;
 
 /**
  *
@@ -18,7 +19,7 @@ public class PuspitaSari_2110010582 {
         // TODO code application logic here
         
         //objek class rumah
-        rumah Rumah = new rumah("Blok B", "Samping mesjid", "10x10", 200000000, "Ready");
+        /*rumah Rumah = new rumah("Blok B", "Samping mesjid", "10x10", 200000000, "Ready");
         //output
         System.out.println("Blok rumah : " +Rumah.getBlokRumah());
         System.out.println("Posisi rumah : " +Rumah.getPosisiRumah());
@@ -70,7 +71,11 @@ public class PuspitaSari_2110010582 {
         //output
         System.out.println("Daftar Nama di Buku Tamu : " +Tamu.getNamaTamu());
         System.out.println("Alamat Buku Tamu : " +Tamu.getAlamatTamu());
-        System.out.println("Telpon Buku Tamu : " +Tamu.getTelponTamu());
+        System.out.println("Telpon Buku Tamu : " +Tamu.getTelponTamu());*/
+    
+    FormUtama myFrame = new FormUtama();
+    myFrame.setVisible(true);
+    
     }
     
 }

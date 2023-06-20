@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package perumahan;
+import java.util.ArrayList;
 
 /**
  *
@@ -10,36 +11,41 @@ package perumahan;
  */
 public class bukutamu {
 
-    private String nama;
-    private String alamat;
-    private String telpon;
+    private ArrayList <String> nama;
+    private ArrayList <String> alamat;
+    private ArrayList <String> telpon;
     
-    public bukutamu(String nama, String alamat, String telpon){
-        setNamaTamu(nama);
-        setAlamatTamu(alamat);
-        setTelponTamu(telpon);
-    }
-    
-    //method set
-    public void setNamaTamu(String nama){
-        this.nama = nama;
-    }
-    public void setAlamatTamu(String alamat){
-        this.alamat = alamat;
-    }
-    public void setTelponTamu(String telpon){
-        this.telpon = telpon;
+    public bukutamu(){
+        nama = new ArrayList <String>();
+        alamat = new ArrayList <String>();
+        telpon = new ArrayList <String>();
     }
     
-    //method get
-    public String getNamaTamu(){
-        return nama;
+    //method set get nama
+    public void insertNama (String isi){
+    this.nama.add(isi);
     }
-    public String getAlamatTamu(){
-        return alamat;
+    
+    public ArrayList <String> getNama(){
+    return this.nama;
     }
-    public String getTelponTamu(){
-        return telpon;
+    
+    //method set get alamat
+    public void insertAlamat (String isi){
+    this.alamat.add(isi);
+    }
+    
+    public ArrayList <String> getAlamat(){
+    return this.alamat;
+    }
+    
+    //method set get telpon
+    public void insertTelpon (String isi){
+    this.telpon.add(isi);
+    }
+    
+    public ArrayList <String> getTelpon(){
+    return this.telpon;
     }
     
 }

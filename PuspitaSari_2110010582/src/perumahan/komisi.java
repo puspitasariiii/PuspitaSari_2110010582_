@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package perumahan;
+import java.util.ArrayList;
 
 /**
  *
@@ -10,28 +11,30 @@ package perumahan;
  */
 public class komisi {
     
-    private int jumlah;
-    private String status;
+    private ArrayList<Integer> jumlah;
+    private ArrayList<String> status;
     
-    public komisi(int jumlah, String status){
-        setJumlahKomisi(jumlah);
-        setStatusKomisi(status);
-    }
-    
-    //method set
-    public void setJumlahKomisi(int jumlah){
-        this.jumlah = jumlah;
-    }
-    public void setStatusKomisi(String status){
-        this.status = status;
+    public komisi(){
+        jumlah = new ArrayList<Integer>();
+        status = new ArrayList<String>();
     }
     
-    //method get
-    public int getJumlahKomisi(){
-        return jumlah;
+    //method set get jumlah
+    public void insertJumlah (Integer isi){
+    this.jumlah.add(isi);
     }
-    public String getStatusKomisi(){
-        return status;
+    
+    public ArrayList <Integer> getJumlah(){
+    return this.jumlah;
+    }
+    
+    //method set get status
+    public void insertStatus (String isi){
+    this.status.add(isi);
+    }
+    
+    public ArrayList <String> getStatus(){
+    return this.status;
     }
     
 }

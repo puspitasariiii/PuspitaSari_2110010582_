@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package perumahan;
+import java.util.ArrayList;
 
 /**
  *
@@ -10,44 +11,52 @@ package perumahan;
  */
 public class marketing {
     
-    private String nama;
-    private String alamat;
-    private String telpon;
-    private String jenisKelamin;
+    private ArrayList <String> nama;
+    private ArrayList <String> alamat;
+    private ArrayList <String> telpon;
+    private ArrayList <String> jenisKelamin;
     
-    public marketing(String nama, String alamat, String telpon, String jenisKelamin){
-        setNamaMarketing(nama);
-        setAlamatMarketing(alamat);
-        setTelponMarketing(telpon);
-        setJenisKelamin(jenisKelamin);
-    }
-    
-    //method set
-    public void setNamaMarketing(String nama){
-        this.nama = nama;
-    }
-    public void setAlamatMarketing(String alamat){
-        this.alamat = alamat;
-    }
-    public void setTelponMarketing(String telpon){
-        this.telpon = telpon;
-    }
-    public void setJenisKelamin(String jenisKelamin){
-        this.jenisKelamin = jenisKelamin;
+    public marketing(){
+        nama = new ArrayList<String>();
+        alamat = new ArrayList<String>();
+        telpon = new ArrayList<String>();
+        jenisKelamin = new ArrayList<String>();
     }
     
-    //method get
-    public String getNamaMarketing(){
-        return nama;
+    //method set get nama
+    public void insertNama (String isi){
+    this.nama.add(isi);
     }
-    public String getAlamatMarketing(){
-        return alamat;
+    
+    public ArrayList <String> getNama(){
+    return this.nama;
     }
-    public String getTelponMarketing(){
-        return telpon;
+    
+    //method set get alamat
+    public void insertAlamat (String isi){
+    this.alamat.add(isi);
     }
-    public String getJenisKelamin(){
-        return jenisKelamin;
+    
+    public ArrayList <String> getAlamat(){
+    return this.alamat;
+    }
+    
+    //method set get telpon
+    public void insertTelpon (String isi){
+    this.telpon.add(isi);
+    }
+    
+    public ArrayList <String> getTelpon(){
+    return this.telpon;
+    }
+    
+    //method set get jenisKelamin
+    public void insertJenisKelamin (String isi){
+    this.jenisKelamin.add(isi);
+    }
+    
+    public ArrayList <String> getJenisKelamin(){
+    return this.jenisKelamin;
     }
     
 }

@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package perumahan;
+import java.util.ArrayList;
 
 /**
  *
@@ -10,51 +11,63 @@ package perumahan;
  */
 public class rumah {
     
-    private String blok;
-    private String posisi;
-    private String luas;
-    private int harga;
-    private String status;
+    private ArrayList <String> blok;
+    private ArrayList <String> posisi;
+    private ArrayList <String> luas;
+    private ArrayList <Integer> harga;
+    private ArrayList <String> status;
     
-    public rumah(String blok, String posisi, String luas, int harga, String status){
-        setBlokRumah(blok);
-        setPosisiRumah(posisi);
-        setLuasRumah(luas);
-        setHargaRumah(harga);
-        setStatusRumah(status);
-    }
-    
-    //method set
-    public void setBlokRumah(String blok){
-        this.blok = blok;
-    }
-    public void setPosisiRumah(String posisi){
-        this.posisi = posisi;
-    }
-    public void setLuasRumah(String luas){
-        this.luas = luas;
-    }
-    public void setHargaRumah(int harga){
-        this.harga = harga;
-    }
-    public void setStatusRumah(String status){
-        this.status = status;
+    public rumah(){
+        blok = new ArrayList<String>();
+        posisi = new ArrayList<String>();
+        luas = new ArrayList<String>();
+        harga = new ArrayList<Integer>();
+        status = new ArrayList<String>();
     }
     
-    //method get
-    public String getBlokRumah(){
-        return blok;
+    //method set get blok
+    public void insertBlok (String isi){
+    this.blok.add(isi);
     }
-    public String getPosisiRumah(){
-        return posisi;
+    
+    public ArrayList <String> getBlok(){
+    return this.blok;
     }
-    public String getLuasRumah(){
-        return luas;
+    
+    //method set get posisi
+    public void insertPosisi (String isi){
+    this.posisi.add(isi);
     }
-    public int getHargaRumah(){
-        return harga;
+    
+    public ArrayList <String> getPosisi(){
+    return this.posisi;
     }
-    public String getStatusRumah(){
-        return status;
+    
+    //method set get luas
+    public void insertLuas (String isi){
+    this.luas.add(isi);
     }
+    
+    public ArrayList <String> getLuas(){
+    return this.luas;
+    }
+    
+    //method set get harga
+    public void insertHarga (int isi){
+    this.harga.add(isi);
+    }
+    
+    public ArrayList <Integer> getHarga(){
+    return this.harga;
+    }
+    
+    //method set get status
+    public void insertStatus (String isi){
+    this.status.add(isi);
+    }
+    
+    public ArrayList <String> getStatus(){
+    return this.status;
+    }
+    
 }

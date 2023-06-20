@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package perumahan;
+import java.util.ArrayList;
 
 /**
  *
@@ -10,60 +11,74 @@ package perumahan;
  */
 public class berkas {
     
-    private String photo;
-    private String ktp;
-    private String kk;
-    private String skbmr;
-    private String npwp;
-    private String slipGaji;
+    private ArrayList<String> photo;
+    private ArrayList<String> ktp;
+    private ArrayList<String> kk;
+    private ArrayList<String> skbmr;
+    private ArrayList<String> npwp;
+    private ArrayList<String> slipGaji;
     
-    public berkas(String photo, String ktp, String kk, String skbmr, String npwp, String slipGaji){
-        setPhoto(photo);
-        setFotokopiKTP(ktp);
-        setFotokopiKK(kk);
-        setSKBMR(skbmr);
-        setFotokopiNPWP(npwp);
-        setSlipGaji(slipGaji);
-    }
-    
-    //method set
-    public void setPhoto(String photo){
-        this.photo = photo;
-    }
-    public void setFotokopiKTP(String ktp){
-        this.ktp = ktp;
-    }
-    public void setFotokopiKK(String kk){
-        this.kk = kk;
-    }
-    public void setSKBMR(String skbmr){
-        this.skbmr = skbmr;
-    }
-    public void setFotokopiNPWP(String npwp){
-        this.npwp = npwp;
-    }
-    public void setSlipGaji(String slipGaji){
-        this.slipGaji = slipGaji;
+    public berkas(){
+        photo = new ArrayList<String>();
+        ktp = new ArrayList<String>();
+        kk = new ArrayList<String>();
+        skbmr = new ArrayList<String>();
+        npwp = new ArrayList<String>();
+        slipGaji = new ArrayList<String>();
     }
     
-    //method get
-    public String getPhoto(){
-        return photo;
+    //method set get photo
+    public void insertPhoto(String isi){
+    this.photo.add(isi);
     }
-    public String getFotokopiKTP(){
-        return ktp;
+    
+    public ArrayList <String> getPhoto(){
+    return this.photo;
     }
-    public String getFotokopiKK(){
-        return kk;
+    
+    //method set get ktp
+    public void insertKtp (String isi){
+    this.ktp.add(isi);
     }
-    public String getSKBMR(){
-        return skbmr;
+    
+    public ArrayList <String> getKtp(){
+    return this.ktp;
     }
-    public String getFotokopiNPWP(){
-        return npwp;
+    
+    //method set get kk
+    public void insertKk (String isi){
+    this.kk.add(isi);
     }
-    public String getSlipGaji(){
-        return slipGaji;
+    
+    public ArrayList <String> getKk(){
+    return this.kk;
+    }
+    
+    //method set get skbmr
+    public void insertSkbmr (String isi){
+    this.skbmr.add(isi);
+    }
+    
+    public ArrayList <String> getSkbmr(){
+    return this.skbmr;
+    }
+    
+    //method set get npwp
+    public void insertNpwp (String isi){
+    this.npwp.add(isi);
+    }
+    
+    public ArrayList <String> getNpwp(){
+    return this.npwp;
+    }
+    
+    //method set get slipGaji
+    public void insertSlipGaji (String isi){
+    this.slipGaji.add(isi);
+    }
+    
+    public ArrayList <String> getSlipGaji(){
+    return this.slipGaji;
     }
     
 }

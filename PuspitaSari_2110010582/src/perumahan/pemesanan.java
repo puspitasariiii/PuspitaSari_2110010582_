@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package perumahan;
+import java.util.ArrayList;
 
 /**
  *
@@ -10,20 +11,19 @@ package perumahan;
  */
 public class pemesanan {
     
-    private String tanggal;
+    private ArrayList <String> tanggal;
     
-    public pemesanan(String tanggal){
-        setTanggalPemesanan(tanggal);
+    public pemesanan(){
+        tanggal = new ArrayList<String>();
     }
     
-    //method set
-    public void setTanggalPemesanan(String tanggal){
-        this.tanggal = tanggal;
+    //method set get tanggal
+    public void insertTanggal(String isi){
+    this.tanggal.add(isi);
     }
     
-    //method get
-    public String getTanggalPemesanan(){
-        return tanggal;
+    public ArrayList<String> getTanggal(){
+    return this.tanggal;
     }
     
 }

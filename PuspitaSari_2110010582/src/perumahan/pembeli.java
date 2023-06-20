@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package perumahan;
+import java.util.ArrayList;
 
 /**
  *
@@ -10,60 +11,74 @@ package perumahan;
  */
 public class pembeli {
     
-    private String nama;
-    private String alamat;
-    private String telpon;
-    private String pekerjaan;
-    private String jenisKelamin;
-    private String status;
+    private ArrayList <String> nama;
+    private ArrayList <String> alamat;
+    private ArrayList <String> telpon;
+    private ArrayList <String> pekerjaan;
+    private ArrayList <String> jenisKelamin;
+    private ArrayList <String> status;
     
-    public pembeli(String nama, String alamat, String telpon, String pekerjaan, String jenisKelamin, String status){
-        setNamaPembeli(nama);
-        setAlamatPembeli(alamat);
-        setTelponPembeli(telpon);
-        setPekerjaanPembeli(pekerjaan);
-        setJenisKelamin(jenisKelamin);
-        setStatusPembeli(status);
-    }
-    
-    //method set
-    public void setNamaPembeli(String nama){
-        this.nama = nama;
-    }
-    public void setAlamatPembeli(String alamat){
-        this.alamat = alamat;
-    }
-    public void setTelponPembeli(String telpon){
-        this.telpon = telpon;
-    }
-    public void setPekerjaanPembeli(String pekerjaan){
-        this.pekerjaan = pekerjaan;
-    }
-    public void setJenisKelamin(String jenisKelamin){
-        this.jenisKelamin = jenisKelamin;
-    }
-    public void setStatusPembeli(String status){
-        this.status = status;
+    public pembeli(){
+        nama = new ArrayList<String>();
+        alamat = new ArrayList<String>();
+        telpon = new ArrayList<String>();
+        pekerjaan = new ArrayList<String>();
+        jenisKelamin = new ArrayList<String>();
+        status = new ArrayList<String>();
     }
     
-    //method set
-    public String getNamaPembeli(){
-        return nama;
+    //method set get nama
+    public void insertNama (String isi){
+    this.nama.add(isi);
     }
-    public String getAlamatPembeli(){
-        return alamat;
+    
+    public ArrayList <String> getNama(){
+    return this.nama;
     }
-    public String getTelponPembeli(){
-        return telpon;
+    
+    //method set get alamat
+    public void insertAlamat (String isi){
+    this.alamat.add(isi);
     }
-    public String getPekerjaanPembeli(){
-        return pekerjaan;
+    
+    public ArrayList <String> getAlamat(){
+    return this.alamat;
     }
-    public String getJenisKelamin(){
-        return jenisKelamin;
+    
+    //method set get telpon
+    public void insertTelpon (String isi){
+    this.telpon.add(isi);
     }
-    public String getStatusPembeli(){
-        return status;
+    
+    public ArrayList <String> getTelpon(){
+    return this.telpon;
+    }
+    
+    //method set get pekerjaan
+    public void insertPekerjaan (String isi){
+    this.pekerjaan.add(isi);
+    }
+    
+    public ArrayList <String> getPekerjaan(){
+    return this.pekerjaan;
+    }
+    
+    //method set get jenisKelamin
+    public void insertJenisKelamin (String isi){
+    this.jenisKelamin.add(isi);
+    }
+    
+    public ArrayList <String> getJenisKelamin(){
+    return this.jenisKelamin;
+    }
+    
+    //method set get status
+    public void insertStatus (String isi){
+    this.status.add(isi);
+    }
+    
+    public ArrayList <String> getStatus(){
+    return this.status;
     }
     
 }
